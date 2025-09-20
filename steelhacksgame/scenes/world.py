@@ -4,11 +4,18 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from characters.player import Player
 from scenes.scene import Scene
+
 class World(Scene):
     def __init__(self):
         super().__init__()
         self.player = Player([400, 300], "assets/player1.png")  # your image
         self.all_sprites = pygame.sprite.Group(self.player)
+        self.image = pygame.image.load("assets/player1.png")
+        self.rect = self.image.get_rect()
+    
+
+
+
 
     def update(self, dt, keys):
         self.all_sprites.update(dt, keys)

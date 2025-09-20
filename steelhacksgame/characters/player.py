@@ -15,3 +15,6 @@ class Player(pygame.sprite.Sprite):
             self.rect.x -= self.speed * dt
         if keys[pygame.K_d]:
             self.rect.x += self.speed * dt
+        
+        screen_rect = pygame.Rect(0, 0, 720, 480)
+        self.rect = self.rect.clamp(screen_rect)
