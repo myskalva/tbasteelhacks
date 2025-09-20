@@ -7,7 +7,7 @@ from scenes.scene import Scene
 class World(Scene):
     def __init__(self):
         super().__init__()
-        self.player = Player([400, 300], "assets/player1.png")  # your image
+        self.player = Player([400, 300], "assets/player2.png")  # your image
         self.all_sprites = pygame.sprite.Group(self.player)
 
     def update(self, dt, keys):

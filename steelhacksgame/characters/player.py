@@ -1,6 +1,6 @@
 import pygame
 class Player(pygame.sprite.Sprite):
-    def __init__(self, pos, image_path="assets/player1.png"):
+    def __init__(self, pos, image_path="assets/player2.png"):
         super().__init__()
         self.image = pygame.image.load(image_path).convert_alpha()
         self.rect = self.image.get_rect(center=pos)
