@@ -1,8 +1,10 @@
 import pygame
 from scenes.world import World
 
+
+
 pygame.init()
-screen = pygame.display.set_mode((1280, 720))
+screen = pygame.display.set_mode((720, 480))
 clock = pygame.time.Clock()
 running = True
 dt = 0
@@ -20,5 +22,7 @@ while running:
 
     pygame.display.flip()
     dt = clock.tick(60) / 1000
+    
+
 
 pygame.quit()
