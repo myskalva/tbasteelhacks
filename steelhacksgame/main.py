@@ -5,11 +5,14 @@ from scenes.world import World
 
 pygame.init()
 screen = pygame.display.set_mode((720, 480))
+#helps with making the frame rate consistent across computers
 clock = pygame.time.Clock()
 running = True
 dt = 0
 
+
 world = World()
+
 
 while running:
     for event in pygame.event.get():
