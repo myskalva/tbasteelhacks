@@ -1,5 +1,5 @@
 import pygame
-from scenes.world import World
+from scenes.bedroom import Bedroom
 
 
 
@@ -11,7 +11,7 @@ running = True
 dt = 0
 
 
-world = World()
+bedroom = Bedroom()
 
 
 while running:
@@ -20,8 +20,8 @@ while running:
             running = False
 
     keys = pygame.key.get_pressed()
-    world.update(dt, keys)
-    world.draw(screen)
+    bedroom.update(dt, keys)
+    bedroom.draw(screen)
 
     pygame.display.flip()
     dt = clock.tick(60) / 1000
