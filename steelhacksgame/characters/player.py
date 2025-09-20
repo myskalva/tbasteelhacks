@@ -16,5 +16,6 @@ class Player(pygame.sprite.Sprite):
         if keys[pygame.K_d]:
             self.rect.x += self.speed * dt
         
+        #Keeps the sprite in the box
         screen_rect = pygame.Rect(0, 0, 720, 480)
         self.rect = self.rect.clamp(screen_rect)
