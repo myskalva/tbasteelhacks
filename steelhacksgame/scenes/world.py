@@ -1,9 +1,10 @@
 import pygame
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+from characters.player import Player
 from scenes.scene import Scene
-from characters.player import Player  # make sure you have this class
-
 class World(Scene):
-    player = Player()
     def __init__(self):
         super().__init__()
         self.player = Player([400, 300], "assets/player1.png")  # your image

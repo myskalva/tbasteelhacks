@@ -1,8 +1,8 @@
 import pygame
 class Player(pygame.sprite.Sprite):
-    def __init__(self, pos):
+    def __init__(self, pos, image_path="assets/player1.png"):
         super().__init__()
-        self.image = pygame.image.load("assets/player1.png").convert_alpha()
+        self.image = pygame.image.load(image_path).convert_alpha()
         self.rect = self.image.get_rect(center=pos)
         self.speed = 200
     def update(self, dt, keys):
