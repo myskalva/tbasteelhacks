@@ -21,4 +21,6 @@ class Bedroom(Scene):
     #creates a black box
     def draw(self, screen):
         screen.blit(self.background, (0, 0))
+        pygame.draw.rect(screen, (255, 0, 0), self.player.rect, 2)
         self.all_sprites.draw(screen)
+
