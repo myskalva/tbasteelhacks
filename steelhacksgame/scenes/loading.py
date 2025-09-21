@@ -15,4 +15,4 @@ class Loading(Scene):
 
     #creates a black box
     def draw(self, screen):
-        screen.fill(0,0,0)
+        screen.fill((0,0,0))
